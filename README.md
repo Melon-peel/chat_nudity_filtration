@@ -326,7 +326,16 @@ The accuracy scores are presented in the table below (with hyperparameters, if a
 |Keras, 224 $\times$ 224 v1.1| 0.852 | - | 0.1 | 0.1 |
 
 From that, the Keras model (299 $\times$ 299) was picked as demonstrating the best performance
+To use the script, get the [model](https://s3.amazonaws.com/nsfwdetector/nsfw.299x299.h5), [main script](https://github.com/Melon-peel/chat_nudity_filtration/blob/main/filter_nudity.py) and [json of default params], and the [module](https://github.com/Melon-peel/chat_nudity_filtration/tree/main/nsfw_detector) for classification and model loading, which I took from [nsfw_model](nsfw_model) and turned off verbosity for model.predict (you can download the model from the initial repo and will be jut fine, but there might be some visual problems with a progress bar).
 
+All is assumed to be put in the same directory by default.
+The use of the script is:
+
+```sh
+python filter_nudity.py --vars vars.json
+
+# --vars: optional path to the vars.json file (will look in the current directory if not specified)
+```
 
 ---
 ## Nudity detection in VK chats (In process)
