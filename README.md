@@ -308,7 +308,7 @@ With this information in mind, I looked for optimal parameters for each model to
 - $P(Porn) > PornParam$
 - $P(Neutral) < NeutralParam$
 
-I compared the optimization with and without the last condition (for the $neutral\_param$), and it turned that it didn't make any improvements to the value of accuracy, thus it was discarded.
+I compared the optimization with and without the last condition (for the $NeutralParam$), and it turned that it didn't make any improvements to the value of accuracy, thus it was discarded.
 
 
 ### Accuracy 
