@@ -1,0 +1,13 @@
+{"is_recursive": 0,
+"track_progress": 1,
+"nsfw_threshold": 0.9, 
+"neutral_threshold": 0.9,
+"sexy_threshold": 0.9, 
+"model_path": "",
+"image_dim": 299,
+"pictures_dir": "",
+"output_dir": "",
+"hentai_param": 0.1,
+"porn_param": 0.2,
+"sexy_param_upper": 0.74
+} 
