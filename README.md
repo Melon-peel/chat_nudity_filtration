@@ -54,7 +54,7 @@ The models were tested on the set of pictures manually collected from the Intern
 ### Binary classifiers
 The first three models are binary classifiers returning probabilities for a picture to be [NSFW and SFW](https://en.wikipedia.org/wiki/Not_safe_for_work), where $P(NSFW) + P(SFW) = 1$ for a given picture.
 
-Of all the categories in the dataset, <mark>Neutral pictures</mark>, <mark>*Male, underwear*</mark>, and <mark>*Female, underwer* </mark>, referred to as $SAFE$ are those containing SFW pictures, so the logic used was as follows.
+Of all the categories in the dataset, **Neutral pictures**; **Male, underwear**; and **Female, underwear**, referred to as $SAFE$, are those containing SFW pictures, so the logic used was as follows.
 
 For the first three models, the answer a model returns is right if one of the following conditions if satisfied: 
 - $P(NSFW) > t$ and $PIC \not\in {SAFE}$
@@ -70,96 +70,95 @@ For each model, I looked at the mean values and standard deviations of probabili
 <table cellspacing="0" border="0">
 	<colgroup span="8" width="85"></colgroup>
 	<tr>
-		<td height="17" align="left"><br></td>
-		<td align="left"><br></td>
-		<td colspan=2 align="center" valign=middle><b>Model 4</b></td>
-		<td colspan=2 align="center" valign=middle><b>Model 5</b></td>
-		<td colspan=2 align="center" valign=middle><b>Model 6</b></td>
+		<td height="17" align="left"><font face="Liberation Serif"><br></font></td>
+		<td align="left"><font face="Liberation Serif"><br></font></td>
+		<td colspan=2 align="center" valign=middle><b><font face="Liberation Serif">Model 4</font></b></td>
+		<td colspan=2 align="center" valign=middle><b><font face="Liberation Serif">Model 5</font></b></td>
+		<td colspan=2 align="center" valign=middle><b><font face="Liberation Serif">Model 6</font></b></td>
 		</tr>
 	<tr>
-		<td height="17" align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><b>Mean</b></td>
-		<td align="left"><b>Std</b></td>
-		<td align="left"><b>Mean</b></td>
-		<td align="left"><b>Std</b></td>
-		<td align="left"><b>Mean</b></td>
-		<td align="left"><b>Std</b></td>
+		<td height="17" align="left"><font face="Liberation Serif"><br></font></td>
+		<td align="left"><font face="Liberation Serif"><br></font></td>
+		<td align="left"><b><font face="Liberation Serif">Mean</font></b></td>
+		<td align="left"><b><font face="Liberation Serif">Std</font></b></td>
+		<td align="left"><b><font face="Liberation Serif">Mean</font></b></td>
+		<td align="left"><b><font face="Liberation Serif">Std</font></b></td>
+		<td align="left"><b><font face="Liberation Serif">Mean</font></b></td>
+		<td align="left"><b><font face="Liberation Serif">Std</font></b></td>
 	</tr>
 	<tr>
-		<td rowspan=4 height="68" align="center" valign=middle><b>NSFW</b></td>
-		<td style="border-top: 1px solid #000000; border-left: 1px solid #000000" align="left">Sexy</td>
-		<td style="border-top: 1px solid #000000" align="right" sdval="0.179" sdnum="1033;">0.179</td>
-		<td style="border-top: 1px solid #000000" align="right" sdval="0.277" sdnum="1033;">0.277</td>
-		<td style="border-top: 1px solid #000000" align="right" sdval="0.112" sdnum="1033;">0.112</td>
-		<td style="border-top: 1px solid #000000" align="right" sdval="0.225" sdnum="1033;">0.225</td>
-		<td style="border-top: 1px solid #000000" align="right" sdval="0.22" sdnum="1033;">0.22</td>
-		<td style="border-top: 1px solid #000000; border-right: 1px solid #000000" align="right" sdval="0.307" sdnum="1033;">0.307</td>
+		<td rowspan=4 height="68" align="center" valign=middle><b><font face="Liberation Serif">NSFW</font></b></td>
+		<td align="left"><font face="Liberation Serif">Sexy</font></td>
+		<td align="right" sdval="0.179" sdnum="1033;"><font face="Liberation Serif">0.179</font></td>
+		<td align="right" sdval="0.277" sdnum="1033;"><font face="Liberation Serif">0.277</font></td>
+		<td align="right" sdval="0.112" sdnum="1033;"><font face="Liberation Serif">0.112</font></td>
+		<td align="right" sdval="0.225" sdnum="1033;"><font face="Liberation Serif">0.225</font></td>
+		<td align="right" sdval="0.22" sdnum="1033;"><font face="Liberation Serif">0.22</font></td>
+		<td align="right" sdval="0.307" sdnum="1033;"><font face="Liberation Serif">0.307</font></td>
 	</tr>
 	<tr>
-		<td style="border-left: 1px solid #000000" align="left">Porn</td>
-		<td align="right" sdval="0.324" sdnum="1033;">0.324</td>
-		<td align="right" sdval="0.371" sdnum="1033;">0.371</td>
-		<td align="right" sdval="0.402" sdnum="1033;">0.402</td>
-		<td align="right" sdval="0.424" sdnum="1033;">0.424</td>
-		<td align="right" sdval="0.279" sdnum="1033;">0.279</td>
-		<td style="border-right: 1px solid #000000" align="right" sdval="0.336" sdnum="1033;">0.336</td>
+		<td align="left"><font face="Liberation Serif">Porn</font></td>
+		<td align="right" sdval="0.324" sdnum="1033;"><font face="Liberation Serif">0.324</font></td>
+		<td align="right" sdval="0.371" sdnum="1033;"><font face="Liberation Serif">0.371</font></td>
+		<td align="right" sdval="0.402" sdnum="1033;"><font face="Liberation Serif">0.402</font></td>
+		<td align="right" sdval="0.424" sdnum="1033;"><font face="Liberation Serif">0.424</font></td>
+		<td align="right" sdval="0.279" sdnum="1033;"><font face="Liberation Serif">0.279</font></td>
+		<td align="right" sdval="0.336" sdnum="1033;"><font face="Liberation Serif">0.336</font></td>
 	</tr>
 	<tr>
-		<td style="border-left: 1px solid #000000" align="left">Hentai</td>
-		<td align="right" sdval="0.419" sdnum="1033;">0.419</td>
-		<td align="right" sdval="0.452" sdnum="1033;">0.452</td>
-		<td align="right" sdval="0.422" sdnum="1033;">0.422</td>
-		<td align="right" sdval="0.461" sdnum="1033;">0.461</td>
-		<td align="right" sdval="0.389" sdnum="1033;">0.389</td>
-		<td style="border-right: 1px solid #000000" align="right" sdval="0.419" sdnum="1033;">0.419</td>
+		<td align="left"><font face="Liberation Serif">Hentai</font></td>
+		<td align="right" sdval="0.419" sdnum="1033;"><font face="Liberation Serif">0.419</font></td>
+		<td align="right" sdval="0.452" sdnum="1033;"><font face="Liberation Serif">0.452</font></td>
+		<td align="right" sdval="0.422" sdnum="1033;"><font face="Liberation Serif">0.422</font></td>
+		<td align="right" sdval="0.461" sdnum="1033;"><font face="Liberation Serif">0.461</font></td>
+		<td align="right" sdval="0.389" sdnum="1033;"><font face="Liberation Serif">0.389</font></td>
+		<td align="right" sdval="0.419" sdnum="1033;"><font face="Liberation Serif">0.419</font></td>
 	</tr>
 	<tr>
-		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000" align="left">Neutral</td>
-		<td align="right" sdval="0.044" sdnum="1033;">0.044</td>
-		<td align="right" sdval="0.149" sdnum="1033;">0.149</td>
-		<td style="border-bottom: 1px solid #000000" align="right" sdval="0.042" sdnum="1033;">0.042</td>
-		<td style="border-bottom: 1px solid #000000" align="right" sdval="0.155" sdnum="1033;">0.155</td>
-		<td style="border-bottom: 1px solid #000000" align="right" sdval="0.057" sdnum="1033;">0.057</td>
-		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="right" sdval="0.129" sdnum="1033;">0.129</td>
+		<td align="left"><font face="Liberation Serif">Neutral</font></td>
+		<td align="right" sdval="0.044" sdnum="1033;"><font face="Liberation Serif">0.044</font></td>
+		<td align="right" sdval="0.149" sdnum="1033;"><font face="Liberation Serif">0.149</font></td>
+		<td align="right" sdval="0.042" sdnum="1033;"><font face="Liberation Serif">0.042</font></td>
+		<td align="right" sdval="0.155" sdnum="1033;"><font face="Liberation Serif">0.155</font></td>
+		<td align="right" sdval="0.057" sdnum="1033;"><font face="Liberation Serif">0.057</font></td>
+		<td align="right" sdval="0.129" sdnum="1033;"><font face="Liberation Serif">0.129</font></td>
 	</tr>
 	<tr>
-		<td rowspan=3 height="51" align="center" valign=middle><b>SFW</b></td>
-		<td style="border-top: 1px solid #000000; border-left: 1px solid #000000" align="left">Sexy</td>
-		<td style="border-top: 1px solid #000000" align="right" sdval="0.343" sdnum="1033;">0.343</td>
-		<td style="border-top: 1px solid #000000" align="right" sdval="0.424" sdnum="1033;">0.424</td>
-		<td style="border-top: 1px solid #000000" align="right" sdval="0.286" sdnum="1033;">0.286</td>
-		<td style="border-top: 1px solid #000000" align="right" sdval="0.399" sdnum="1033;">0.399</td>
-		<td style="border-top: 1px solid #000000" align="right" sdval="0.302" sdnum="1033;">0.302</td>
-		<td style="border-top: 1px solid #000000; border-right: 1px solid #000000" align="right" sdval="0.368" sdnum="1033;">0.368</td>
+		<td rowspan=4 height="68" align="center" valign=middle><b><font face="Liberation Serif">SFW</font></b></td>
+		<td align="left"><font face="Liberation Serif">Sexy</font></td>
+		<td align="right" sdval="0.343" sdnum="1033;"><font face="Liberation Serif">0.343</font></td>
+		<td align="right" sdval="0.424" sdnum="1033;"><font face="Liberation Serif">0.424</font></td>
+		<td align="right" sdval="0.286" sdnum="1033;"><font face="Liberation Serif">0.286</font></td>
+		<td align="right" sdval="0.399" sdnum="1033;"><font face="Liberation Serif">0.399</font></td>
+		<td align="right" sdval="0.302" sdnum="1033;"><font face="Liberation Serif">0.302</font></td>
+		<td align="right" sdval="0.368" sdnum="1033;"><font face="Liberation Serif">0.368</font></td>
 	</tr>
 	<tr>
-		<td style="border-left: 1px solid #000000" align="left">Porn</td>
-		<td align="right" sdval="0.092" sdnum="1033;">0.092</td>
-		<td align="right" sdval="0.166" sdnum="1033;">0.166</td>
-		<td align="right" sdval="0.099" sdnum="1033;">0.099</td>
-		<td align="right" sdval="0.225" sdnum="1033;">0.225</td>
-		<td align="right" sdval="0.075" sdnum="1033;">0.075</td>
-		<td style="border-right: 1px solid #000000" align="right" sdval="0.144" sdnum="1033;">0.144</td>
+		<td align="left"><font face="Liberation Serif">Porn</font></td>
+		<td align="right" sdval="0.092" sdnum="1033;"><font face="Liberation Serif">0.092</font></td>
+		<td align="right" sdval="0.166" sdnum="1033;"><font face="Liberation Serif">0.166</font></td>
+		<td align="right" sdval="0.099" sdnum="1033;"><font face="Liberation Serif">0.099</font></td>
+		<td align="right" sdval="0.225" sdnum="1033;"><font face="Liberation Serif">0.225</font></td>
+		<td align="right" sdval="0.075" sdnum="1033;"><font face="Liberation Serif">0.075</font></td>
+		<td align="right" sdval="0.144" sdnum="1033;"><font face="Liberation Serif">0.144</font></td>
 	</tr>
 	<tr>
-		<td style="border-left: 1px solid #000000" align="left">Hentai</td>
-		<td align="right" sdval="0.011" sdnum="1033;">0.011</td>
-		<td align="right" sdval="0.028" sdnum="1033;">0.028</td>
-		<td align="right" sdval="0.006" sdnum="1033;">0.006</td>
-		<td align="right" sdval="0.013" sdnum="1033;">0.013</td>
-		<td align="right" sdval="0.038" sdnum="1033;">0.038</td>
-		<td style="border-right: 1px solid #000000" align="right" sdval="0.05" sdnum="1033;">0.05</td>
+		<td align="left"><font face="Liberation Serif">Hentai</font></td>
+		<td align="right" sdval="0.011" sdnum="1033;"><font face="Liberation Serif">0.011</font></td>
+		<td align="right" sdval="0.028" sdnum="1033;"><font face="Liberation Serif">0.028</font></td>
+		<td align="right" sdval="0.006" sdnum="1033;"><font face="Liberation Serif">0.006</font></td>
+		<td align="right" sdval="0.013" sdnum="1033;"><font face="Liberation Serif">0.013</font></td>
+		<td align="right" sdval="0.038" sdnum="1033;"><font face="Liberation Serif">0.038</font></td>
+		<td align="right" sdval="0.05" sdnum="1033;"><font face="Liberation Serif">0.05</font></td>
 	</tr>
 	<tr>
-		<td height="17" align="left"><br></td>
-		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000" align="left">Neutral</td>
-		<td style="border-bottom: 1px solid #000000" align="right" sdval="0.508" sdnum="1033;">0.508</td>
-		<td style="border-bottom: 1px solid #000000" align="right" sdval="0.43" sdnum="1033;">0.43</td>
-		<td style="border-bottom: 1px solid #000000" align="right" sdval="0.566" sdnum="1033;">0.566</td>
-		<td style="border-bottom: 1px solid #000000" align="right" sdval="0.437" sdnum="1033;">0.437</td>
-		<td style="border-bottom: 1px solid #000000" align="right" sdval="0.521" sdnum="1033;">0.521</td>
-		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="right" sdval="0.394" sdnum="1033;">0.394</td>
+		<td align="left"><font face="Liberation Serif">Neutral</font></td>
+		<td align="right" sdval="0.508" sdnum="1033;"><font face="Liberation Serif">0.508</font></td>
+		<td align="right" sdval="0.43" sdnum="1033;"><font face="Liberation Serif">0.43</font></td>
+		<td align="right" sdval="0.566" sdnum="1033;"><font face="Liberation Serif">0.566</font></td>
+		<td align="right" sdval="0.437" sdnum="1033;"><font face="Liberation Serif">0.437</font></td>
+		<td align="right" sdval="0.521" sdnum="1033;"><font face="Liberation Serif">0.521</font></td>
+		<td align="right" sdval="0.394" sdnum="1033;"><font face="Liberation Serif">0.394</font></td>
 	</tr>
 </table>
 As for the NSFW category, I tested it on both drawings and human pictures, so the deviations are rather high. To fix that, I calculated the same statistics but with differentiation:
