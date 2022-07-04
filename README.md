@@ -303,11 +303,11 @@ To give a brief overview:
 
 
 #### Optimal parameters
-With this information in mind, I looked for optimal parameters for each model to maximize the accuracy. Specifically, I optimized *hentai_param*, *porn_param*, and *neutral_param*, so that a picture is considered NSFW if one of the following is satisfied:
+With this information in mind, I looked for optimal parameters for each model to maximize the accuracy. Specifically, I optimized *HentaiParam*, *PornParam*, and *NeutralParam*, so that a picture is considered NSFW if one of the following is satisfied:
 
-- $P(Hentai) > hentai\_param$
-- $P(Porn) > porn\_param$
-- $P(Neutral) < neutral\_param$
+- $P(Hentai) > HentaiParam$
+- $P(Porn) > PornParam$
+- $P(Neutral) < NeutralParam$
 
 I compared the optimization with and without the last condition (for the $neutral\_param$), and it turned that it didn't make any improvements to the value of accuracy, thus it was discarded.
 
